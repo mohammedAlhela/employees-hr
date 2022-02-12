@@ -1,0 +1,142 @@
+//bodge color is bink lighten 3
+// colors variables
+$black: #282830;
+ $pink: #f48fb1;
+ $light-pink : #ddb2c1 ;
+ $red : #e1306c ;
+ $primary : #4267b2  ;
+ $info : #1da1f2 ;
+ $super-light-pink: #e4ced5;
+ $super-light-orange : #fbf7f1 ;
+// +++++++++++++ notes +++++++++++
+// the main white color in the header is the whitesmoke
+
+// main +++++
+
+
+.v-main {
+    background-color: whitesmoke !important
+}
+
+.main-icon {
+    @extend .icon;
+    color: $black !important;
+    font-size: 32px !important;
+    cursor: pointer;
+    &:hover {
+        color: $pink !important;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 28px !important;
+    }
+}
+
+
+
+.frontend-main-header {
+    padding: 20px  0px 0px;
+    color :  $black;
+    font-size: 30px;
+}
+
+.product-name {
+    color: $black;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.2s all;
+        color: $pink;
+    }
+}
+
+.selling-price {
+    color: $pink;
+    font-size: 20px;
+}
+
+.discount-price {
+    color: #b5b5b5;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+
+.v-overlay {
+    display: block !important;
+    height: 100% !important;
+  }
+
+  .v-overlay__content {
+      height: 100% !important;
+  }
+
+  .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close), .v-navigation-drawer--temporary:not(.v-navigation-drawer--close) {
+
+    width: 350px !important;
+}
+
+// /* width */
+// ::-webkit-scrollbar {
+//     width: 15px;
+//   }
+
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//      box-shadow: inset 1px 1px 5px rgb(231, 225, 225);
+//     background: rgb(231, 225, 225) ;
+//   }
+
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: $light-pink ;
+//     border-radius: 8px;
+//   }
+
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: $pink;
+//   }
+
+
+
+
+
+@import "./header";
+@import "./drawer";
+@import "./options";
+
+@import "./footer";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+.validation-icon {
+    font-size: 11px !important ;
+    @extend .icon;
+    color: $red !important;
+}
+
+.upload-image-container {
+    .image-holder {
+        overflow: hidden !important;
+        width: 300px;
+        height: 300px !important;
+        border-radius: 8px !important ;
+        @media (min-width: 700px) {
+            float: left;
+        }
+
+        .image {
+            width: 300px;
+            height: 300px !important;
+        }
+    }
+
+    .big-image-holder {
+        @extend .image-holder;
+        height: 450px !important;
+        width: 450px !important;
+
+        .big-image {
+            height: 450px !important;
+            width: 450px !important;
+        }
+    }
+
+    .medium-image-holder {
+        @extend .image-holder;
+        height: 450px !important;
+        width: 450px !important;
+
+        .medium-image {
+            height: 450px !important;
+            width: 450px !important;
+        }
+    }
+
+    .small-image-holder {
+        @extend .image-holder;
+        height: 450px !important;
+        width: 450px !important;
+
+        .small-image {
+            height: 450px !important;
+            width: 450px !important;
+        }
+    }
+
+    .categories-image-holder {
+        @extend .image-holder;
+        height: 450px !important;
+        width: 450px !important;
+
+        .categories-image {
+            height: 450px !important;
+            width: 450px !important;
+        }
+    }
+
+    .upload-holder {
+        @media (max-width: 700px) {
+            margin-top: 10px;
+        }
+        @media (min-width: 700px) {
+            position: relative;
+            left: 20px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        .custom-file-upload {
+            &:hover {
+                background-color: whitesmoke !important;
+            }
+            border: 1px solid aliceblue;
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px !important;
+            cursor: pointer;
+        }
+    }
+}

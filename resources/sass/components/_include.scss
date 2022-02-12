@@ -1,0 +1,165 @@
+// @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    // font-family: "system-ui";
+}
+$date-blue: #426ca3;
+$blue: #5080bd;
+$blue-lighten-3: #dde4ed;
+$blue-lighten: #bbcfe9;
+$red: #fb5050;
+
+$gray: #6d747c;
+
+.aliceblue-background{
+    background-color: aliceblue !important;
+}
+
+.icon {
+    cursor: pointer;
+    &:hover {
+        color: $blue !important;
+        transition: 0.4s all;
+    }
+}
+
+.delete-icon , .edit-icon  {
+    @extend .icon  ;
+ font-size: 20px !important;
+}
+
+.delete-icon {
+    &:hover {
+        color: $red !important;
+    }
+}
+
+.icon::after {
+    background-color: white !important;
+}
+
+.input-header {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.items-number {
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+
+// transition
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+// checkpox label
+.v-input--selection-controls__input {
+top: -2px !important; }
+
+// datatable
+
+
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>td, .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td, .v-data-table>.v-data-table__wrapper>table>thead>tr>td {
+    color: #707070 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: inherit;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clearing {
+    clear: both;
+}
+
+.float-right {
+    float: right;
+}
+
+
+
+.v-application--is-ltr
+    .v-data-table
+    > .v-data-table__wrapper
+    > table
+    > tbody
+    > tr
+    > th,
+.v-application--is-ltr
+    .v-data-table
+    > .v-data-table__wrapper
+    > table
+    > tfoot
+    > tr
+    > th,
+.v-application--is-ltr
+    .v-data-table
+    > .v-data-table__wrapper
+    > table
+    > thead
+    > tr
+    > th {
+        @extend .header;
+
+}
+
+
+
+
+.v-alert__content,
+.theme--light.v-label,
+.theme--light.v-input,
+.theme--light.v-input input,
+.theme--light.v-input textarea,
+.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
+.theme--light.v-select .v-select__selection--comma,
+.v-list-item .v-list-item__subtitle {
+    @extend .paragraph;
+}
+
+.v-list-item .v-list-item__title {
+    @extend .header;
+}
+
+.v-application--is-ltr .v-data-footer__select {
+    @extend .paragraph;
+
+}
+
+.v-application--is-ltr .v-data-footer__pagination {
+    @extend .paragraph;
+}
+
+
+
+.thumb-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.v-data-table-header {
+    background-color: aliceblue !important;
+}
+
+.v-progress-circular {
+    margin: 1rem;
+  }
+
+
+
+// .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:last-child, .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:not(.v-data-table__mobile-row), .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:last-child, .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:not(.v-data-table__mobile-row), .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr:last-child>th {
+//     font-size: 13px !important;
+//     color: black !important;
+// }
+

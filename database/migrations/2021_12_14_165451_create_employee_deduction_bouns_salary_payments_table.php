@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateEmployeeDeductionBounsSalaryPaymentsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('employee_deduction_bouns_salary_payments', function (Blueprint $table) {
+            $table->id();
+
+            $table->date('date')->default(now());
+            $table->mediumText('details')->nullable();
+            $table->mediumText('notes')->nullable();
+            $table->integer('employee_id');
+            $table->string('deduction')->default(0);
+            $table->string('bouns')->default(0);
+            $table->string('salary_payments')->default(0);
+            $table->string('total')->default(0);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('employee_deduction_bouns_salary_payments');
+    }
+}

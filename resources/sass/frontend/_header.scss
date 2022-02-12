@@ -1,0 +1,200 @@
+.my-header {
+
+    .brand-icons-section {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background: white;
+        padding: 20px;
+
+
+        @media (min-width: 1200px) {
+
+
+            padding: 20px 12%  ;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding: 20px 12%  ;
+        }
+
+
+        .logo {
+            text-align: left;
+            width: 32%;
+
+            position: relative;
+            top: -5px;
+
+            .menu-icon {
+                @extend .main-icon;
+                display: none;
+            }
+
+            .logo-image {
+                width: 200px;
+                height: 30px;
+            }
+
+            .search-icon {
+                @extend .main-icon;
+                display: none;
+                margin-left: 10px;
+            }
+
+            @media (max-width: 768px) {
+                width: 33%;
+                .menu-icon {
+                    display: inline-block;
+                }
+
+                .search-icon {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+                .logo-image {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 400px) {
+                .logo-image {
+                    width: 120px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .search {
+            text-align: left;
+            width: 38%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+            .search-field {
+                height: 45px !important;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .small-screen-brand-holder {
+            position: relative;
+            top: -5px;
+            display: none;
+            text-align: center;
+            // width: 33%;
+
+            .logo-image {
+                width: 200px;
+                height: 30px;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+
+        .icons {
+            width: 33%;
+            text-align: right;
+
+            .search-icon {
+                @extend .main-icon;
+                display: none;
+            }
+
+            .account-icon {
+                @extend .main-icon;
+            }
+
+            @media (max-width: 768px) {
+                width: 50%;
+
+                .account-icon {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header-links-section {
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        background:  $super-light-orange ;
+
+        display: flex;
+        justify-content: center;
+
+        .link-block {
+            align-items: center;
+
+            display: flex;
+            height: 60px;
+            width: 120px;
+
+            text-align: center;
+            .link {
+                color: $black;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                display: inline-block;
+                width: 100px;
+
+                cursor: pointer;
+
+                &:hover {
+                    color: $pink;
+                    transition: 0.2s all;
+                }
+
+                .sub-link-holder {
+                    padding: 6px !important;
+                    .sub-link {
+                    }
+                }
+
+                .active_link {
+                    color: $pink;
+                    transition: 0.4s all;
+                }
+            }
+        }
+    }
+
+    .bottom-bar-section {
+        padding: 30px;
+        background: $black;
+        color: whitesmoke;
+        text-align: center;
+
+        .frontend-link-span {
+            margin-top: 5px;
+            text-transform: capitalize;
+            font-size: 17px;
+            cursor: pointer;
+            &:hover {
+                color: $pink;
+                transition: 0.4s all;
+            }
+        }
+    }
+}
+
+.sub-link-holder {
+    padding: 6px 20px;
+    cursor: pointer;
+    &:hover {
+        background:  $super-light-orange ;
+    }
+}

@@ -1,0 +1,46 @@
+.drawer-holder{
+
+    width: 350px !important;
+
+
+    .close-btn {
+        margin: 20px;
+    }
+
+    .links-holder {
+
+
+        .drawer-account-icon {
+            margin: 0px  15px !important;
+            font-size: 30px !important;
+        }
+
+        img{
+            border-radius: 4px !important;
+        }
+
+
+        .link-paragraph {
+            color: $black;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            display: block;
+
+            padding: 0px 20px;
+
+            cursor: pointer;
+
+            &:hover {
+                color: $pink;
+                transition: 0.4s all;
+            }
+
+
+        }
+
+
+    }
+}

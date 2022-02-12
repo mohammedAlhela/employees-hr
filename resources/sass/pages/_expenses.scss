@@ -1,0 +1,25 @@
+
+
+    .expenses-holder {
+        position: relative;
+        background-color: white;
+
+        color: black;
+
+        .expenses-sub-holder {
+            padding: 30px 80px;
+
+            @media(max-width : 1200px){
+                padding: 30px 30px;
+            }
+
+
+
+            .total-expenses-holder {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+

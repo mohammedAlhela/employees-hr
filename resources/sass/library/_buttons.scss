@@ -1,0 +1,251 @@
+// confirmed ++++++++++++++
+@mixin button-icon {
+    font-size: 16px !important;
+    color: whitesmoke !important ;
+    margin: 5px 0px 0px 5px;
+  }
+
+  @mixin medium-button {
+    @extend .no-focus;
+    font-family: system-ui !important;
+    text-transform: capitalize !important;
+    padding: 0px 40px 0px 40px  !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: whitesmoke !important;
+    .button-icon {
+      @include button-icon;
+    }
+  }
+
+  @mixin small-button {
+      @include medium-button;
+      font-size: 14px !important;
+      height: 30px !important;
+      padding: 0px 20px 0px 20px  !important;
+  }
+
+  .small-whitesmoke-button{
+      @include small-button;
+      background: white !important;
+      color: $gray !important;
+
+      .button-icon {
+         color : $gray !important;
+        }
+    }
+
+
+  .medium-red-button{
+    @include medium-button;
+    background: $red !important;
+    color: whitesmoke !important;
+
+  }
+
+
+
+
+
+  .small-blue-button {
+      @include small-button;
+      background-color: $blue !important;
+    }
+
+
+    .small-orange-button{
+      @include small-button;
+      background-color: orange !important;
+    }
+
+    .small-orange-button {
+      @include small-button;
+      background-color:   $orange  !important;
+    }
+
+
+
+  .medium-blue-button {
+    @include medium-button;
+    background: $blue !important;
+  }
+
+  .menu-cancel-button {
+      @extend .no-focus;
+      text-transform: capitalize !important;
+      color: $gray !important ;
+      background: whitesmoke !important;
+      font-weight: 600 !important;
+      font-family: system-ui !important;
+  }
+
+  .medium-dark-button {
+      @include medium-button;
+      background: $dark !important;
+    }
+
+    .dialog-buttons-holder {
+      padding-right: 15px;
+      text-align: right;
+      margin-top: 10px;
+
+      .save-button {
+        @extend .small-blue-button;
+        margin-right: 10px;
+      }
+
+      .cancel-button {
+        @include small-button;
+
+        color: $gray !important ;
+        background: white !important;
+      }
+    }
+
+  // confirmed ++++++++++++++
+
+
+
+
+
+
+  .medium-green-button {
+    @include medium-button;
+    background: $green !important;
+  }
+
+  .medium-whitesmoke-button {
+    @include medium-button;
+    background: white !important;
+    color: $gray !important;
+    .button-icon {
+      color: $gray !important;
+    }
+  }
+
+
+
+  .medium-gray-button {
+    @include medium-button;
+    color: $gray !important;
+    background: whitesmoke !important;
+  }
+  .medium-red-button{
+    @include medium-button;
+    color: whitesmoke !important;
+    background: $light-red !important;
+  }
+
+  .small-green-button {
+    @extend .no-focus;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: whitesmoke !important;
+    background: $green !important;
+    .button-icon {
+      @include button-icon;
+    }
+  }
+
+
+
+
+  .toolbar-button {
+    @extend .no-focus;
+    text-transform: capitalize !important;
+    height: 30px !important;
+    color: whitesmoke !important;
+    background: $blue-toolbar !important;
+    .button-icon {
+      @include button-icon;
+    }
+  }
+
+
+
+
+
+  @mixin sections-data-button {
+    padding: 4px 7px 4px 7px;
+    font-size: 11px;
+    margin-right: 5px;
+    border-radius: 5px;
+    &:focus {
+      box-shadow: 1px 1px 3px whitesmoke;
+      outline: none;
+    }
+  }
+  .data-cute-button {
+    @include sections-data-button;
+    color: $blue-cute-color!important ;
+    border: 1px solid $blue-cute-color;
+  }
+
+  .data-green-button {
+    @include sections-data-button;
+    color: $green !important ;
+    border: 1px solid $green;
+  }
+
+  .data-coral-button {
+    @include sections-data-button;
+    color: $light-red !important ;
+    border: 1px solid $red;
+  }
+
+  .data-gold-button {
+      @include sections-data-button;
+      color: $gold !important ;
+      border: 1px solid $gold;
+    }
+
+
+
+
+
+
+  .reset-filter-button{
+      height: 19px !important;
+      margin-top: -5px;
+      color : $green !important ;
+  }
+
+  //   slider transition button
+
+
+
+  .hovered-button {
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+      border: 2px solid whitesmoke;
+      margin: 10px 0;
+      position: relative;
+      cursor: pointer;
+      transition: all .5s ease;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: whitesmoke;
+
+
+
+      &:hover  {
+          background: whitesmoke;
+          color: #545353;
+      }
+
+
+      @media (max-width: 500px) {
+          width: 100px;
+          height: 30px;
+          line-height: 25px;
+          margin: 5px 0;
+          padding: 5px;
+          font-size: 13px;
+      }
+  }

@@ -1,0 +1,75 @@
+.home-container {
+    background: url("/images/project/background.jpg");
+
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .home-holder {
+        position: relative;
+        background-color: white;
+        // padding: 50px 30px;
+
+
+        max-width: 800px;
+        border-radius: 5px;
+        color: black !important;
+        overflow: hidden;
+        margin: 20px;
+
+        .content-holder {
+            padding: 50px;
+        }
+
+        .date {
+            color: #868789 !important;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .home-link {
+            border: 1px solid $blue-lighten-3;
+            padding: 8px 50px;
+            border-radius: 5px;
+            color: $gray;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            background: aliceblue;
+            cursor: pointer;
+            &:hover {
+                transition: 0.4s all;
+                background-color: $blue;
+                color: whitesmoke;
+            }
+        }
+
+        .disabled_link {
+            cursor: auto;
+            background: #e3e3e3;
+            color: #b7b7b7;
+
+            &:hover {
+                background: #e3e3e3;
+                color: #b7b7b7;
+            }
+        }
+    }
+}
+
+.navigation-upbar {
+    background: aliceblue;
+    padding: 20px 50px;
+
+    .image {
+        cursor: pointer;
+        border-radius: 4px;
+        width: 60px;
+        height: 60px;
+    }
+}

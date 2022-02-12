@@ -1,0 +1,32 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+// library
+@import './library/colors';
+@import './library/fonts';
+@import './library/components';
+@import './library/griding';
+@import './library/buttons';
+@import './library/effects';
+
+
+  // components
+
+@import './components/include';
+@import './components/deleteSnackbar';
+
+
+// pages
+@import './pages/login';
+@import './pages/home';
+@import './pages/users';
+@import './pages/employees';
+@import './pages/reports';
+@import './pages/expenses.scss';
+@import './pages/deductions.scss';

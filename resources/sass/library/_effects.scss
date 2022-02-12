@@ -1,0 +1,50 @@
+.no-focus{
+    &:focus{
+        outline:none
+    }
+}
+
+
+.no-hover  {
+ &:hover {
+     text-decoration:  none !important;
+ }
+}
+.clearing{
+    clear: both;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.capitalize{
+    text-transform: capitalize !important;
+}
+
+.cursor-pointer{
+    cursor : pointer !important;
+  }
+
+
+  .pointer{
+    cursor : pointer !important;
+  }
+
+
+  .hiddenHr{
+      display: none !important;
+  }
+
+  .hidden{
+      display: none;
+  }
+
+  .no-box-shadow {
+      box-shadow: none !important;
+  }
+
+
+  .background-cover{
+      background-size: cover;
+  }

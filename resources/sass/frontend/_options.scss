@@ -1,0 +1,65 @@
+.curriencies-menu-holder {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999 !important;
+
+    color: $pink !important;
+    background-color: $super-light-pink !important;
+    padding: 4px 10px !important;
+    border-radius: 4px;
+
+    .card-holder {
+        top: -115px !important;
+
+        transform: translate3d(0px, 0px, 0px) !important;
+        border-radius: 8px !important;
+
+        width: 300px;
+
+        .item {
+            padding: 10px 10px;
+
+            &:hover {
+                background-color: $super-light-pink !important ;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.languages-menu-holder {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    z-index: 999 !important;
+
+    .card-holder {
+        top: -105px !important;
+        left: -100px !important;
+
+        transform: translate3d(0px, 0px, 0px) !important;
+        border-radius: 8px !important;
+
+        width: 150px;
+
+        .item {
+            padding: 10px 10px;
+
+            &:hover {
+                background-color: $super-light-pink !important ;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    z-index: 999 !important;
+}
+
+.no-data {
+    padding: 10px !important;
+    @extend .header;
+}

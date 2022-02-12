@@ -1,0 +1,216 @@
+.my_container {
+    margin-top: 180px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+}
+.datatable_topper {
+    margin-top: -15px !important;
+}
+
+// form +++++++++
+.form {
+    background: white;
+    text-align: left;
+
+    .fields-container {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .textarea-form-buttons-holder {
+        margin: 5px 0px 5px 15px;
+    }
+    .form-buttons-holder {
+        margin: 10px 0px 5px 15px;
+    }
+
+    .menu-form-buton-holder {
+        margin: -10px 0px 5px 15px;
+    }
+
+    .adjust-tabs-errors {
+        height: 20px;
+        visibility: hidden;
+    }
+}
+// form +++++++++
+
+.selected_items_styling {
+    @extend .paragraph;
+
+    margin: 0px 0px 2px -4px !important;
+    padding: 3px 0px 3px 10px;
+    border-radius: 8px !important;
+    overflow: hidden;
+    &:hover {
+        background: whitesmoke;
+    }
+}
+
+.selectAllSmallScreen {
+    @media (min-width: 990px) {
+        display: none;
+    }
+}
+
+.main-hold {
+    .inf-holder {
+        position: relative;
+        background: white;
+        min-height: 700px;
+        border-radius: 6px;
+        overflow: hidden;
+        @media (min-width: 1192px) {
+            width: 98%;
+        }
+        @media (min-width: 1400px) {
+            width: 95%;
+        }
+    }
+}
+
+.datatable_toper {
+    position: relative;
+    top: -30px;
+}
+
+
+
+
+.relative {
+    position: relative !important;
+}
+
+.adjustFullPagrDialog {
+    overflow: hidden;
+    height: 400px !important;
+}
+
+.filter-button-holder {
+    padding-left: 5px;
+}
+
+.father-of-block-header-filter-holde {
+    padding-bottom: 10px;
+    .block-header-filter-holder-lefter {
+        float: left;
+        @extend.header !optional;
+        padding-left: 5px;
+        position: relative;
+        top: 7px;
+    }
+
+    .block-header-filter-holder-righter {
+        @extend .icon;
+        float: right;
+        padding-right: 5px;
+    }
+}
+
+.h-50 {
+    height: 50px !important;
+}
+
+.h-40 {
+    height: 40px !important;
+}
+
+.mt-minu-20 {
+    margin-top: -20px;
+}
+
+
+// admins only
+
+.total-number-add-export {
+    .add-button {
+        margin-left: 20px;
+        float: right;
+        text-align: right;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.admins-search {
+    padding-right: 30px !important;
+    .search {
+        padding: 2px 1px;
+        float: right;
+        text-align: right;
+        width: 300px !important;
+        height: 50px;
+
+        @media (max-width: 692px) {
+            float: left;
+        }
+    }
+}
+
+// admins only
+
+
+
+
+// rest of pages filter designing
+
+.search-add-button {
+    text-align: right;
+    padding-right: 30px !important;
+
+    .search {
+        padding: 2px 1px;
+        float: right;
+        text-align: right;
+        width: 300px !important;
+        height: 50px;
+    }
+
+    .reset-search-button {
+        float: right;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .add-button {
+        margin-left: 20px;
+        float: right;
+        text-align: right;
+        position: relative;
+        top: 3px;
+    }
+}
+
+
+// rest of pages filter designing
+
+
+.search-field {
+    width: 200px !important;
+    display: inline-block;
+}
+
+.border-radius {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.input-holder-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.products-images-paragraph {
+    margin: 5px 0px 10px 2px !important;
+}
+
+.white-hr {
+    color: whitesmoke !important;
+    background: whitesmoke !important;
+}
+
+.table-image {
+    border-radius: 5px;
+    height: 90px;
+    width: 60px;
+}
